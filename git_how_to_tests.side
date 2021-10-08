@@ -1,0 +1,65 @@
+{
+  "id": "cc0a647d-4f2f-40e1-b2a5-519d7b5f2e15",
+  "version": "2.0",
+  "name": "gitHowTo_tests",
+  "url": "https://githowto.com/",
+  "tests": [{
+    "id": "fe8bdb40-11f0-4d94-8d1f-cf4c9b227255",
+    "name": "test_1",
+    "commands": [{
+      "id": "a2621f0c-ac07-463a-a5d0-a08984566079",
+      "comment": "",
+      "command": "open",
+      "target": "https://githowto.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd4c2e0a-2122-4f9c-8aba-6fc6cf23f4cf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "988x694",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ecb369f4-6d84-46dd-bb38-5a5fbf923794",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Start!",
+      "targets": [
+        ["linkText=Start!", "linkText"],
+        ["css=.btn-hg", "css:finder"],
+        ["xpath=//a[contains(text(),'Start!')]", "xpath:link"],
+        ["xpath=//div[@id='main']/article/div/div[3]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/setup')]", "xpath:href"],
+        ["xpath=//div[3]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Start!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9efd082-0909-40e6-87dd-ef6e6f256990",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=2. The final preparation",
+      "targets": [
+        ["linkText=2. The final preparation", "linkText"],
+        ["css=.next > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'2. The final preparation')]", "xpath:link"],
+        ["xpath=//div[@id='main']/article/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://githowto.com/more_setup')]", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'2. The final preparation')]", "xpath:innerText"]
+      ],
+      "value": "2. The final preparation"
+    }]
+  }],
+  "suites": [{
+    "id": "be44b2a2-2423-48c5-90cf-970d34ecb643",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fe8bdb40-11f0-4d94-8d1f-cf4c9b227255"]
+  }],
+  "urls": ["https://translate.yandex.ru/", "https://githowto.com/"],
+  "plugins": []
+}
